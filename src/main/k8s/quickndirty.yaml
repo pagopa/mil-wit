@@ -26,8 +26,9 @@ spec:
     spec:
       serviceAccountName: mil-d-wit-sa
       containers:
-      - image: ghcr.io/pagopa/mil-wit:refs_heads_main
+      - image: ghcr.io/pagopa/mil-wit:latest
         name: mil-wit
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
 
